@@ -29,3 +29,38 @@ Langage Principal: Python
 Méthodologie ETL : Extraction, Transformation, Chargement 
 
 Administration et inspection DB : DBeaver
+
+## Description des Fichiers
+
+Dockerfile : Contient les instructions pour construire l'image Docker de l'environnement Python.
+
+docker-compose.yml : Orchestre l'exécution du pipeline dans un conteneur et définit les volumes de données.
+
+main_pipeline.py : Le script principal qui lance le pipeline et appelle les autres modules.
+
+create_schema_and_test.py : Script Python responsable de la création des tables SQL (DDL) dans la base de données.
+
+importation_data.py : Script Python qui gère l'Extraction et le Chargement  des CSV vers SQLite.
+
+analyse_data.py : Script Python qui lance l'Analyse donc les requêtes SQL et stocke les résultats.
+
+Note_final.md : Note de synthèse 
+
+Schéma_d'architecture.png : Image du schéma technique illustrant l'architecture Docker et le flux de données.
+
+fichier sqlite.sql : Contient les requêtes SQL 
+
+Note_docker_simplon_powershell.txt : Preuve d'exécution et sortie du terminal lors de l'exécution Docker.
+
+final push.txt : historique des commandes utilisées pour les opérations Git.
+
+Windows PowerShell_importation_sur_github.txt : historique des commandes utilisées pour les opérations Git.
+
+## Bilan du Projet
+
+Ce projet s'est avéré une expérience particulièrement formatrice et complète. Il constitue une pièce maîtresse pour démontrer mes compétences en Data Engineering.
+
+Je vous remercie pour le temps que vous accorderez à l'examen de mon travail
+
+yamina mehali 
+
