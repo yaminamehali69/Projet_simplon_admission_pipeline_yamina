@@ -1,4 +1,4 @@
-Nom,ID Référence produit,Prix,Stock
+nom,id_reference_produits,prix,stock
 Produit A,REF001,49.99,100
 Produit B,REF002,19.99,50
 Produit C,REF003,29.99,75

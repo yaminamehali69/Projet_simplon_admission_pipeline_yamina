@@ -1,4 +1,4 @@
-ID Magasin,Ville,Nombre de salariés
+id_magasin,ville,nombre_de_salaries
 1,Paris,10
 2,Marseille,5
 3,Lyon,8

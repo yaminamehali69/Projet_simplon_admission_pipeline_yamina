@@ -1,4 +1,4 @@
-Date,ID Référence produit,Quantité,ID Magasin
+date,id_reference_produits,quantite,id_magasin
 2023-05-27,REF001,5,1
 2023-05-28,REF002,3,2
 2023-05-29,REF003,2,1
