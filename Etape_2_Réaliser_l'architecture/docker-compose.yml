@@ -1,0 +1,23 @@
+# docker-compose.yml (Corrigé pour la base de données)
+services:
+  data_base:
+    container_name: sqlite_data
+    image: alpine # Changé de alpine/git à alpine (contient 'tail')
+    command: tail -f /dev/null
+    volumes:
+      - pme_volume:/app/data # Nom du Volume 
+
+  data_processor:
+    container_name: data_processor
+    build: .
+    depends_on:
+      - data_base
+    volumes:
+      - pme_volume:/app/data # nom du volume 
+    environment:
+      DB_PATH: /app/data/pme_num_ventes.db
+
+volumes: 
+  pme_volume:
+
+  

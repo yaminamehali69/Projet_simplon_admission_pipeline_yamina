@@ -1,0 +1,104 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+Installez la dernière version de PowerShell pour de nouvelles fonctionnalités et améliorations ! https://aka.ms/PSWindows
+
+PS G:\Mon Drive\Brief projet simplon> git init
+Reinitialized existing Git repository in G:/Mon Drive/Brief projet simplon/.git/
+PS G:\Mon Drive\Brief projet simplon> git add .
+PS G:\Mon Drive\Brief projet simplon> git commit -m "Ajout des fichiers d'architecture, des scripts Python et des données CSV"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'minam@Mehali.(none)')
+PS G:\Mon Drive\Brief projet simplon> git config --global user.email "yaminamehali69@gmail.com"
+PS G:\Mon Drive\Brief projet simplon> git config --global user.name "yaminamehali69"
+PS G:\Mon Drive\Brief projet simplon> # 1. Si vous étiez bloquée, réessayez la commande commit :
+PS G:\Mon Drive\Brief projet simplon> git commit -m "Ajout des fichiers d'architecture et des données CSV"
+[master (root-commit) 523c149] Ajout des fichiers d'architecture et des données CSV
+ 8 files changed, 83 insertions(+)
+ create mode 100644 "BDD/Donn\303\251s brief data engineer - magasins (1).csv"
+ create mode 100644 "BDD/Donn\303\251s brief data engineer - produits (1).csv"
+ create mode 100644 "BDD/Donn\303\251s brief data engineer - ventes (1).csv"
+ create mode 100644 "Etape_1_Concevoir_l'architecture/Sch\303\251ma_d'architecture.png"
+ create mode 100644 "Etape_2_R\303\251aliser_l'architecture/Dockerfile"
+ create mode 100644 "Etape_2_R\303\251aliser_l'architecture/Int\303\251gration donn\303\251es"
+ create mode 100644 "Etape_2_R\303\251aliser_l'architecture/test_simplon.py"
+ create mode 100644 "Etape_3_R\303\251aliser_une _analyse_pr\303\251alable_des_donn\303\251es/Sch\303\251ma de la base des donn\303\251es.drawio.png"
+PS G:\Mon Drive\Brief projet simplon>
+PS G:\Mon Drive\Brief projet simplon> # 2. Continuer l'envoi vers le dépôt distant
+PS G:\Mon Drive\Brief projet simplon> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+PS G:\Mon Drive\Brief projet simplon> git remote add origin https://github.com/yaminamehali69
+PS G:\Mon Drive\Brief projet simplon> git remote remove origin
+PS G:\Mon Drive\Brief projet simplon> git remote add origin https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git
+PS G:\Mon Drive\Brief projet simplon> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git'
+PS G:\Mon Drive\Brief projet simplon> git branch -M main
+PS G:\Mon Drive\Brief projet simplon> git push -u origin main
+info: please complete authentication in your browser...
+To https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS G:\Mon Drive\Brief projet simplon> git push -u origin main
+To https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS G:\Mon Drive\Brief projet simplon> git pull origin main
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1024 bytes | 8.00 KiB/s, done.
+From https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+PS G:\Mon Drive\Brief projet simplon> git push -u origin main
+To https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS G:\Mon Drive\Brief projet simplon> git pull origin main --allow-unrelated-histories
+From https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+PS G:\Mon Drive\Brief projet simplon> git push -u origin main
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (15/15), 214.19 KiB | 6.91 MiB/s, done.
+Total 15 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git
+   5134529..91311cf  main -> main
+branch 'main' set up to track 'origin/main'.
+PS G:\Mon Drive\Brief projet simplon>
