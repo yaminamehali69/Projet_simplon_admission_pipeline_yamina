@@ -104,3 +104,21 @@ id_analyse|ville     |CA_Total_Region|Date_Analyse       |
         12|Nantes    |         739.83|2025-12-14 21:58:57|
         13|Strasbourg|         579.89|2025-12-14 21:58:57|
         14|Lille     |         249.93|2025-12-14 21:58:57|
+        
+SELECT M.ville AS Ville, SUM(V.quantite * P.prix) AS CA_Total_Region
+        FROM ventes AS V
+        JOIN produits AS P ON LOWER(V.id_reference_produits) = LOWER(P.id_reference_produits)
+        JOIN magasins AS M ON V.id_magasin = M.id_magasin
+        GROUP BY M.ville
+        ORDER BY CA_Total_Region DESC
+        
+Ville     |CA_Total_Region|
+----------+---------------+
+Lyon      |        1059.79|
+Marseille |        1009.73|
+Bordeaux  |         829.81|
+Paris     |          799.8|
+Nantes    |         739.83|
+Strasbourg|         579.89|
+Lille     |         249.93|
+        

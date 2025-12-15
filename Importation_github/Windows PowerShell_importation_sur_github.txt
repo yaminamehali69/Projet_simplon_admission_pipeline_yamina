@@ -102,3 +102,28 @@ To https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.gi
    5134529..91311cf  main -> main
 branch 'main' set up to track 'origin/main'.
 PS G:\Mon Drive\Brief projet simplon>
+
+
+
+Partie 2 : final export fichier vers git hub 
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+Installez la dernière version de PowerShell pour de nouvelles fonctionnalités et améliorations ! https://aka.ms/PSWindows
+
+PS G:\Mon Drive\Brief projet simplon> git add magasins.csv
+PS G:\Mon Drive\Brief projet simplon> git add produits.csv
+PS G:\Mon Drive\Brief projet simplon> git add ventes.csv
+PS G:\Mon Drive\Brief projet simplon> git commit -m "Résolution des conflits de fusion après le pull."
+[main efa42dc] Résolution des conflits de fusion après le pull.
+PS G:\Mon Drive\Brief projet simplon> git push origin main
+Enumerating objects: 43, done.
+Counting objects: 100% (39/39), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (29/29), 228.08 KiB | 5.07 MiB/s, done.
+Total 29 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git
+   29582d9..efa42dc  main -> main
+PS G:\Mon Drive\Brief projet simplon>
