@@ -1,0 +1,25 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+Installez la dernière version de PowerShell pour de nouvelles fonctionnalités et améliorations ! https://aka.ms/PSWindows
+
+PS G:\Mon Drive\Brief projet simplon> git add .
+PS G:\Mon Drive\Brief projet simplon> git commit -m "modifications effectuées"
+[main bd630f4] modifications effectuées
+ 7 files changed, 68 insertions(+), 584 deletions(-)
+ rename magasins.csv => BDD/magasins.csv (100%)
+ rename produits.csv => BDD/produits.csv (100%)
+ rename ventes.csv => BDD/ventes.csv (100%)
+ create mode 100644 Note_final.md
+ delete mode 100644 Note_resultats_visuel.ipynb
+PS G:\Mon Drive\Brief projet simplon> git push origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 1.37 KiB | 234.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/yaminamehali69/Projet_simplon_admission_pipeline_yamina.git
+   efa42dc..bd630f4  main -> main
+PS G:\Mon Drive\Brief projet simplon>
